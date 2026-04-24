@@ -1,22 +1,29 @@
 # frozen_string_literal: true
 
-# Builds from source — expect a few minutes on first install.
+# Homebrew formula for siGit Code (`sigit` binary).
+# Updated automatically by CI — do not edit manually.
 class Sigit < Formula
   desc 'AI coding agent powered by local LLM via Onde Inference'
-  homepage 'https://github.com/setoelkahfi/sigit'
-  license any_of: ['MIT', 'Apache-2.0']
+  homepage 'https://github.com/getsigit/sigit'
+  version '0.1.1'
+  license 'Apache-2.0'
 
-  head 'https://github.com/setoelkahfi/sigit.git', branch: 'main'
-
-  depends_on 'rust' => :build
+  on_macos do
+    on_arm do
+      url 'https://github.com/getsigit/sigit/releases/download/v0.1.1/sigit-macos-arm64.tar.gz'
+      sha256 'PLACEHOLDER'
+    end
+    on_intel do
+      url 'https://github.com/getsigit/sigit/releases/download/v0.1.1/sigit-macos-amd64.tar.gz'
+      sha256 'PLACEHOLDER'
+    end
+  end
 
   def install
-    system 'cargo', 'install', *std_cargo_args
+    bin.install 'sigit'
   end
 
   test do
-    # Non-TTY stdin triggers ACP mode; the version line lands on stderr.
-    output = shell_output("echo '' | #{bin}/sigit 2>&1")
-    assert_match 'siGit', output
+    assert_match version.to_s, shell_output("#{bin}/sigit --version", 1)
   end
 end

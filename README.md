@@ -1,15 +1,14 @@
-# siGit Code
+# siGit Code — Homebrew Tap
 
-[siGit Code](https://github.com/setoelkahfi/sigit) is an AI coding agent that runs a local LLM on your machine. No cloud, no API key.
+[siGit Code](https://github.com/getsigit/sigit) is an AI coding agent that runs a local LLM on your machine.
 
 ## Install
 
 ```bash
-brew tap setoelkahfi/sigit https://github.com/setoelkahfi/sigit-homebrew-tap
-brew install --HEAD sigit
+brew install getsigit/sigit/sigit
 ```
 
-The first install builds from source, so expect a few minutes while Cargo pulls the world. Grab a coffee.
+Pre-built binaries are downloaded — no Rust toolchain needed.
 
 ## Usage
 
@@ -17,14 +16,14 @@ The first install builds from source, so expect a few minutes while Cargo pulls 
 sigit        # opens the interactive chat TUI
 ```
 
-For Zed, add this to `~/.config/zed/settings.json` and it just works:
+For Zed, add to `~/.config/zed/settings.json`:
 
 ```json
 {
   "agent_servers": {
-    "siGit": {
-      "command": "sigit",
-      "args": []
+    "siGit Code": {
+      "type": "custom",
+      "command": "sigit"
     }
   }
 }
@@ -33,25 +32,33 @@ For Zed, add this to `~/.config/zed/settings.json` and it just works:
 ## Upgrade
 
 ```bash
-brew upgrade --fetch-HEAD sigit
+brew upgrade sigit
 ```
 
 ## Uninstall
 
 ```bash
 brew uninstall sigit
-brew untap setoelkahfi/sigit
+brew untap getsigit/sigit
 ```
+
+## Other install methods
+
+| Method | Command |
+|--------|---------|
+| pip | `pip install sigit` |
+| npm | `npm install -g @smbcloud/sigit` |
+| Cargo | `cargo install sigit` |
 
 ## Requirements
 
-- macOS 14 or later
-- ~2 GB free disk for the default model — downloaded on first run, not at install time
-
-## Notes
-
-No tagged releases yet, so `--HEAD` is required. Once versions are cut the formula will get a stable `url` and `sha256` and you won't need the flag.
+- macOS 14 or later (Apple Silicon or Intel)
+- ~2 GB free disk for the default model (downloaded on first run)
 
 ## License
 
-MIT OR Apache-2.0
+Apache-2.0
+
+## Copyright
+
+2026 smbCloud (Splitfire AB).
