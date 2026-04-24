@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Homebrew formula for siGit Code (`sigit` binary).
-# Updated automatically by CI — do not edit manually.
 class Sigit < Formula
   desc 'AI coding agent powered by local LLM via Onde Inference'
   homepage 'https://github.com/getsigit/sigit'
@@ -11,11 +10,11 @@ class Sigit < Formula
   on_macos do
     on_arm do
       url 'https://github.com/getsigit/sigit/releases/download/v0.1.1/sigit-macos-arm64.tar.gz'
-      sha256 'PLACEHOLDER'
+      sha256 'f188d27dbb0e52de201a03df0ddea9bf1868e2a409bd769a3eea8c44c4fc2fd4'
     end
     on_intel do
       url 'https://github.com/getsigit/sigit/releases/download/v0.1.1/sigit-macos-amd64.tar.gz'
-      sha256 'PLACEHOLDER'
+      sha256 '1f572b7a88e0edf49fedd66de7311d7156be17b39721412312b4ea0701e9f380'
     end
   end
 
