@@ -1,6 +1,6 @@
 # siGit Code — Homebrew Tap
 
-[siGit Code](https://github.com/getsigit/sigit) is a coding agent for [smbCloud](https://smbcloud.xyz/) that runs entirely on your machine. No API keys. No cloud round-trips. The model lives in your local HuggingFace cache.
+[siGit Code](https://github.com/getsigit/sigit) is a coding agent for [smbCloud](https://smbcloud.xyz/) that runs entirely on your machine. No API keys. No cloud round-trips.
 
 siGit has two modes:
 
@@ -14,7 +14,9 @@ Current platform support through this tap:
 ## Install
 
 ```bash
-brew install getsigit/sigit/sigit
+brew tap getsigit/tap
+brew install sigit
+```
 ```
 
 Homebrew downloads a pre-built macOS binary, so you do not need a Rust toolchain.
