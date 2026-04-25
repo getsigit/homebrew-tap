@@ -17,7 +17,6 @@ Current platform support through this tap:
 brew tap getsigit/tap
 brew install sigit
 ```
-```
 
 Homebrew downloads a pre-built macOS binary, so you do not need a Rust toolchain.
 
@@ -67,6 +66,7 @@ brew untap getsigit/sigit
 |--------|---------|
 | npm | `npm install -g @smbcloud/sigit` |
 | Cargo | `cargo install sigit` |
+| pip | `pip install sigit-code` |
 
 ## Requirements
 
