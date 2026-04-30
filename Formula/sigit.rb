@@ -2,7 +2,7 @@
 
 # Homebrew formula for siGit Code (`sigit` binary).
 class Sigit < Formula
-  desc 'AI coding agent powered by local LLM via Onde Inference'
+  desc 'Local coding agent powered by Onde Inference'
   homepage 'https://github.com/getsigit/sigit'
   version '1.0.2'
   license 'Apache-2.0'

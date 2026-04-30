@@ -1,34 +1,32 @@
-# siGit Code — Homebrew Tap
+# siGit Code Homebrew tap
 
-[siGit Code](https://github.com/getsigit/sigit) is a coding agent for [smbCloud](https://smbcloud.xyz/) that runs entirely on your machine. No API keys. No cloud round-trips.
+[siGit Code](https://github.com/getsigit/sigit) is a local coding agent from [smbCloud](https://smbcloud.xyz/). It runs on your machine. No API keys, no cloud round-trips.
 
-siGit has two modes:
+siGit Code has two modes:
 
-- ACP mode, where Zed or another ACP-compatible editor starts it over stdio
-- an interactive terminal chat when you run `sigit` yourself
+- **ACP mode:** Zed or another ACP-compatible editor starts it over stdio
+- **Terminal mode:** run `sigit` yourself for the interactive chat UI
 
-Current platform support through this tap:
-
-- macOS: ACP mode and interactive terminal mode
+This tap currently ships the macOS build.
 
 ## Install
 
-```bash
+```sh
 brew tap getsigit/tap
 brew install sigit
 ```
 
-Homebrew downloads a pre-built macOS binary, so you do not need a Rust toolchain.
+Homebrew downloads a prebuilt macOS binary, so you do not need a Rust toolchain.
 
 ## First run
 
-The first time siGit starts, it downloads a GGUF model (~1–2 GB) from HuggingFace. After that, startup is much faster because the model is already on disk.
+The first time you start siGit Code, it downloads a GGUF model from Hugging Face. Expect roughly 1 to 2 GB. After that, startup is much faster because the model is already on disk.
 
-On macOS, siGit shares its model cache with the siGit desktop app through an App Group container. If the desktop app already downloaded the model, the CLI will reuse it.
+On macOS, siGit Code shares its model cache with the desktop app through an App Group container. If the desktop app already downloaded the model, the CLI reuses it.
 
 ## Zed setup
 
-Add to `~/.config/zed/settings.json`:
+Add this to `~/.config/zed/settings.json`:
 
 ```json
 {
@@ -41,23 +39,23 @@ Add to `~/.config/zed/settings.json`:
 }
 ```
 
-Use the full absolute path. If you are on Intel macOS, that path may be `/usr/local/bin/sigit` instead.
+Use the full absolute path. On Intel Macs, that path may be `/usr/local/bin/sigit` instead.
 
 ## Terminal mode
 
-If you run `sigit` directly in a terminal, it opens an interactive chat UI. It uses the same model and system prompt as the editor integration, so it is useful for quick questions when you do not want to open Zed first.
+Run `sigit` in a terminal and it opens the interactive chat UI. It uses the same model and system prompt as the editor integration, so it is handy when you want a quick answer without opening Zed first.
 
 ## Upgrade
 
-```bash
+```sh
 brew upgrade sigit
 ```
 
 ## Uninstall
 
-```bash
+```sh
 brew uninstall sigit
-brew untap getsigit/sigit
+brew untap getsigit/tap
 ```
 
 ## Other install methods
@@ -72,7 +70,7 @@ brew untap getsigit/sigit
 
 - macOS 14 or later
 - Apple Silicon or Intel
-- ~2 GB free disk for the default model download
+- around 2 GB of free disk space for the default model download
 
 ## License
 
