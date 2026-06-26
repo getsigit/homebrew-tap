@@ -1,6 +1,6 @@
 # siGit Code Homebrew tap
 
-[siGit Code](https://github.com/getsigit/sigit) is a local coding agent from [smbCloud](https://smbcloud.xyz/). It runs on your machine. No API keys, no cloud round-trips.
+[siGit Code](https://github.com/getsigit/sigit) is a local coding agent from [smbCloud](https://smbcloud.xyz/). It runs on your machine. No API keys, no cloud round-trips. Its home is [code.sigit.si](https://code.sigit.si).
 
 siGit Code has two modes:
 
