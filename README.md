@@ -78,4 +78,4 @@ Apache-2.0
 
 ## Copyright
 
-2026 smbCloud (Splitfire AB).
+© 2026 [smbCloud Platform](https://smbcloud.xyz/) (Splitfire AB).
