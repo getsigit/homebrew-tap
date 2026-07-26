@@ -76,6 +76,10 @@ brew untap getsigit/tap
 
 Apache-2.0
 
+## Distribution
+
+[Splitfire AB](https://5mb.app).
+
 ## Copyright
 
-© 2026 [Splitfire AB](https://5mb.app) ([siGit Code & Deploy](https://sigit.si)).
+© 2026 PT Sigit Mitra Bangun ([siGit Code & Deploy](https://sigit.si)).
