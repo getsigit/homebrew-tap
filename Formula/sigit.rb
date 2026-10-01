@@ -4,17 +4,17 @@
 class Sigit < Formula
   desc 'AI coding agent powered by local LLM via Onde Inference'
   homepage 'https://github.com/getsigit/sigit'
-  version '1.5.11'
+  version '1.5.12'
   license 'Apache-2.0'
 
   on_macos do
     on_arm do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.5.11/sigit-macos-arm64.tar.gz'
-      sha256 'b249236e876aa1c4f7adcee04e6d71e2a8a24923a0664d33474211697be7ca34'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.5.12/sigit-macos-arm64.tar.gz'
+      sha256 'b2558e65f2ad84a0ba0f791b5304276dbff20a4128dbe968bd7fa9ba434b62cf'
     end
     on_intel do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.5.11/sigit-macos-amd64.tar.gz'
-      sha256 '5755fc2dcdc2a37712a01b2f45304eb16697c58c8c539f88b49733ab927a89b8'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.5.12/sigit-macos-amd64.tar.gz'
+      sha256 'f457ab764f4ae161f009841d68c7a0f8b1268bd10f46c1c5e9ec0eee23938b07'
     end
   end
 
