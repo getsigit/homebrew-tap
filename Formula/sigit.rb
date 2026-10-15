@@ -2,19 +2,19 @@
 
 # Homebrew formula for siGit Code (`sigit` binary).
 class Sigit < Formula
-  desc 'AI coding agent powered by local LLM via Onde Inference'
-  homepage 'https://github.com/getsigit/sigit'
-  version '1.6.9'
+  desc 'A modular local inference LLM coding agent. Core component of siGit Factory.'
+  homepage 'https://sigit.si/code'
+  version '1.7.0'
   license 'Apache-2.0'
 
   on_macos do
     on_arm do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.6.9/sigit-macos-arm64.tar.gz'
-      sha256 'fb6f026f79bca359be502cea1ad6b83f03bee93731894b9b56337da3af50f892'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.7.0/sigit-macos-arm64.tar.gz'
+      sha256 'deb2af96ae7a0c953a3309d9768262768244e53b8c74fa38f37431b0cc8dd697'
     end
     on_intel do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.6.9/sigit-macos-amd64.tar.gz'
-      sha256 '451ef7dcd7935ecc658a3235c5c06711656b9caf20292ba8fca808ed3e53a373'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.7.0/sigit-macos-amd64.tar.gz'
+      sha256 '746693a94266e7897036ee3f387208d0a12ce0bad2452b2f3c95ab67ebe9887e'
     end
   end
 
