@@ -4,17 +4,17 @@
 class Sigit < Formula
   desc 'A modular local inference LLM coding agent. Core component of siGit Factory.'
   homepage 'https://sigit.si/code'
-  version '1.7.6'
+  version '1.7.7'
   license 'Apache-2.0'
 
   on_macos do
     on_arm do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.7.6/sigit-macos-arm64.tar.gz'
-      sha256 'e6c62d6b6eb8fd2df9b5db897aef4aa1ea0f27baf0825aaadd900c968c5212c0'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.7.7/sigit-macos-arm64.tar.gz'
+      sha256 'e45f4354e2399e6ec85d70f7e19c5172165f53769a44f1f8c1888c95d29b4bfe'
     end
     on_intel do
-      url 'https://github.com/getsigit/sigit/releases/download/v1.7.6/sigit-macos-amd64.tar.gz'
-      sha256 '7b3879d57bd41dc465741acfef7e160651202a8052a1daa297f3f20ea9ce6d7d'
+      url 'https://github.com/getsigit/sigit/releases/download/v1.7.7/sigit-macos-amd64.tar.gz'
+      sha256 'ddec50229024c81d8336467bf9d8478356e6e9c3e3d09318209772c35231e4e9'
     end
   end
 
